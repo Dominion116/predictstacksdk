@@ -1,5 +1,5 @@
 {
-  "name": "@predictstack/sdk",
+  "name": "predictstack-sdk",
   "version": "0.1.0",
   "description": "Official JavaScript/TypeScript SDK for the PredictStack prediction market platform",
   "type": "module",
@@ -13,16 +13,27 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": ["predictstack", "stacks", "prediction-market", "sdk"],
+  "keywords": [
+    "predictstack",
+    "stacks",
+    "prediction-market",
+    "sdk"
+  ],
   "license": "MIT",
   "devDependencies": {
     "tsup": "^8.0.0",
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "predictstack-sdk": "^0.1.0"
   }
 }
