@@ -12,6 +12,8 @@ export interface PredictStackClientOptions {
   baseUrl: string;
   /** Request timeout in milliseconds. Defaults to 30000 (30 seconds). */
   timeout?: number;
+  /** Maximum number of retry attempts for failed requests. Defaults to 3. */
+  maxRetries?: number;
 }
 
 /**
