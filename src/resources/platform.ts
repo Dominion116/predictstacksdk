@@ -19,3 +19,15 @@ export class PlatformResource {
     return data.leaderboard ?? [];
   }
 }
+
+  /**
+   * Check if the platform API is healthy and responsive
+   */
+  async health(): Promise<boolean> {
+    try {
+      await this.fetch('/api/health');
+      return true;
+    } catch {
+      return false;
+    }
+  }
