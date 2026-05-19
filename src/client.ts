@@ -14,6 +14,8 @@ export interface PredictStackClientOptions {
   timeout?: number;
   /** Maximum number of retry attempts for failed requests. Defaults to 3. */
   maxRetries?: number;
+  /** Enable debug mode for verbose logging. Defaults to false. */
+  debug?: boolean;
 }
 
 /**
