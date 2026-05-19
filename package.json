@@ -1,11 +1,15 @@
 {
   "name": "predictstack-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official JavaScript/TypeScript SDK for the PredictStack prediction market platform",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/predictstack/sdk.git"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",

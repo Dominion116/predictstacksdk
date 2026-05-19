@@ -18,7 +18,6 @@ export class PlatformResource {
     );
     return data.leaderboard ?? [];
   }
-}
 
   /**
    * Check if the platform API is healthy and responsive
@@ -31,3 +30,4 @@ export class PlatformResource {
       return false;
     }
   }
+}
