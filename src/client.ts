@@ -10,6 +10,8 @@ import { PlatformResource } from './resources/platform.js';
  */
 export interface PredictStackClientOptions {
   baseUrl: string;
+  /** Request timeout in milliseconds. Defaults to 30000 (30 seconds). */
+  timeout?: number;
 }
 
 /**
