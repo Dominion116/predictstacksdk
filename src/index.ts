@@ -2,6 +2,7 @@ export { PredictStackClient } from './client.js';
 export type { PredictStackClientOptions } from './client.js';
 export { PredictStackError } from './errors.js';
 export { SDK_VERSION, SDK_NAME } from './version.js';
+export { isMarket, isBet, isUser } from './guards.js';
 export type {
   Market,
   Bet,
