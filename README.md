@@ -33,6 +33,9 @@ console.log(`Total volume: ${stats.totalVolumeMicro / 1_000_000} STX`);
 | Option | Type | Description |
 |--------|------|-------------|
 | `baseUrl` | `string` | Backend URL, e.g. `https://predictstack.onrender.com` |
+| `timeout` | `number` | Request timeout in milliseconds (default: 30000) |
+| `maxRetries` | `number` | Maximum retry attempts for failed requests (default: 3) |
+| `debug` | `boolean` | Enable debug logging (default: false) |
 
 ---
 
