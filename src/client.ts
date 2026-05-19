@@ -5,10 +5,25 @@ import { ClaimsResource } from './resources/claims.js';
 import { UsersResource } from './resources/users.js';
 import { PlatformResource } from './resources/platform.js';
 
+/**
+ * Configuration options for the PredictStack SDK client.
+ */
 export interface PredictStackClientOptions {
   baseUrl: string;
 }
 
+/**
+ * Main client for interacting with the PredictStack prediction market platform.
+ * Provides access to markets, bets, claims, users, and platform resources.
+ *
+ * @example
+ * ```typescript
+ * const client = new PredictStackClient({
+ *   baseUrl: 'https://api.predictstack.com'
+ * });
+ * const markets = await client.markets.list();
+ * ```
+ */
 export class PredictStackClient {
   readonly markets: MarketsResource;
   readonly bets: BetsResource;
