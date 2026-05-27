@@ -1,4 +1,5 @@
 import { PredictStackError } from './errors.js';
+import { SDK_NAME, SDK_VERSION } from './version.js';
 
 export type Fetcher = <T>(path: string, init?: RequestInit) => Promise<T>;
 
@@ -11,6 +12,7 @@ export function createFetcher(baseUrl: string): Fetcher {
       ...init,
       headers: {
         'Content-Type': 'application/json',
+        'User-Agent': `${SDK_NAME}/${SDK_VERSION}`,
         ...init?.headers,
       },
     });
