@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/predictstack/sdk.git"
+    "url": "git+https://github.com/predictstack/sdk.git"
   },
   "exports": {
     ".": {
